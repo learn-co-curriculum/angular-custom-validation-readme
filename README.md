@@ -12,7 +12,7 @@ The built-in validation in HTML forms can only go so far. However, we can actual
 
 ## $validators
 
-Sometimes HTML validators arent enough - for instance, we can't test if data fits to a certain format (for instance, must be 2 characters, 2 numbers and then 2 characters again), or if an input is only numbers.
+Sometimes HTML validators arent enough - for instance, we can't test if data fits to a certain format (like requiring that a string must be 2 characters, 2 numbers and then 2 characters again), or if an input is only numbers.
 
 Let's create a directive to see if our input is *only* numbers. Up until now we've only used directives as elements with templates. However, we're now creating directives as attributes (remember that we can restrict our directives to only be attributes) and not having a tempate - by applying our directive to an element, we're affecting the behaviour of that element - not the contents.
 
