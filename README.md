@@ -25,7 +25,7 @@ function integer() {
 		require: 'ngModel',
 		link: function (scope, element, attrs, ngModel) {
 			ngModel.$validators.integer = function (value) {
-				return value.test(/^\-?\d+$/);
+				return /^\-?\d+$/.test(value);
 			};
 		}
 	}
@@ -51,3 +51,5 @@ Example usage of our new validator would look like this:
 ```
 
 Awesome! Custom validation that slots in nicely with the built-in validation we've used previously.
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/angular-custom-validation-readme'>Angular Custom Validation </a> on Learn.co and start learning to code for free.</p>
